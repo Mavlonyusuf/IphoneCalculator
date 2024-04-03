@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.simple-btn {
+  @apply w-12 h-12 border border-solid border-transparent rounded-full flex justify-center items-center;
+}
+.doubled-btn {
+  @apply col-span-2 w-28 h-12 border border-solid border-transparent rounded-full flex justify-center items-center;
+}
+.oranged-btn {
+  @apply text-slate-50 bg-orange-500;
+}
+.grayed-btn {
+  @apply text-slate-50 bg-slate-400;
+}
+.numbers-btn {
+  @apply text-slate-50 bg-[#333333];
+}
+.main-wrapper {
+  @apply bg-gradient-to-r from-indigo-500 min-h-screen flex justify-center items-start max-md:p-2;
+}
+.calc-wrapper {
+  @apply absolute md:top-1/2 md:left-1/2 md:-translate-y-1/2 max-md:w-8/12 md:-translate-x-1/2 dark:bg-neutral-800 bg-neutral-200 rounded-3xl shadow-2xl shadow-slate-950;
+}
+.iphone-eyebrow {
+  @apply w-20 h-5 rounded-3xl bg-black top-3 absolute;
+}
+.iphone-header {
+  @apply flex justify-between py-2 px-4;
+}
+.header-text {
+  @apply dark:text-slate-50 text-slate-950;
+}
+.numberpad-wrapper {
+  @apply grid grid-cols-4 gap-3 items-center justify-center dark:bg-slate-900 px-3 pb-6 rounded-3xl pt-3 bg-slate-300;
+}
+.iphone-sensitive {
+  @apply w-20 h-[2.5px] rounded-3xl dark:bg-slate-200 bg-slate-800 bottom-3 absolute;
+}
+.calc-screen__main {
+  @apply dark:text-slate-100 text-slate-950 text-right text-3xl font-semibold;
+}
+.calc-screen__large {
+  @apply dark:text-slate-100 text-slate-950 text-right text-lg font-semibold;
+}
+.calc-screen__top {
+  @apply dark:text-slate-300 text-slate-500 text-right text-sm font-semibold;
+}
+.calc-screen__wrapper {
+  @apply max-w-60 h-32 flex flex-col gap-2 px-4 py-12;
+}
+.absolute-wrapper {
+  @apply flex justify-center;
+}
+.calc-mode {
+  @apply p-2;
+}
+.darkMode {
+  @apply text-slate-950;
+}
+.lightMode {
+  @apply text-slate-100;
+}
